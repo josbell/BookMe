@@ -1,0 +1,9 @@
+<div style="text-align:center" class="container">
+  <h1>Book Me</h1>
+  <h4>Welcome to my scheduling page. Please follow the instructions to book me in my calendar.</h4>
+  <button class="seeDates" mat-raised-button color="primary" (click)="showCalendar=!showCalendar">See Dates</button>
+  <div *ngIf="showCalendar">
+  	<app-datepicker></app-datepicker>
+  </div>
+</div>
+	  

@@ -1,0 +1,9 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+  	<mat-calendar
+  		[minDate] = "minDate"
+  		(selectedChange)="onCalendarSelectedChange($event)">
+  	</mat-calendar>
+  </mat-grid-tile>
+  <mat-grid-tile>{{selectedDate | date}}</mat-grid-tile>
+</mat-grid-list>
